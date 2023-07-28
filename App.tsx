@@ -1,20 +1,21 @@
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-
-function App(): JSX.Element {
-  return (
-    <View style={styles.view}>
-      <Text>Reanimated Basics.</Text>
-    </View>
-  );
-}
+import React, {ReactElement} from 'react';
+import PanGestureHandler from './components/PanGestureHandler';
+import {StyleSheet, View} from 'react-native';
 
 const styles = StyleSheet.create({
-  view: {
+  container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
+
+function App(): ReactElement {
+  return (
+    <View style={styles.container}>
+      <PanGestureHandler />
+    </View>
+  );
+}
 
 export default App;
