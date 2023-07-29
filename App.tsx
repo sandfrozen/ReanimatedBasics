@@ -1,5 +1,5 @@
-import React, {ReactElement} from 'react';
-import PanGestureHandler from './components/PanGestureHandler';
+import React from 'react';
+import AnimatedGestureHandler from './components/AnimatedGestureHandler';
 import {StyleSheet, View} from 'react-native';
 
 const styles = StyleSheet.create({
@@ -10,12 +10,10 @@ const styles = StyleSheet.create({
   },
 });
 
-function App(): ReactElement {
+export default function App() {
   return (
     <View style={styles.container}>
-      <PanGestureHandler />
+      <AnimatedGestureHandler />
     </View>
   );
 }
-
-export default App;
