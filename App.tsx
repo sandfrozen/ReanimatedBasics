@@ -1,6 +1,6 @@
 import React from 'react';
-import AnimatedGestureHandler from './components/AnimatedGestureHandler';
 import {StyleSheet, View} from 'react-native';
+import AnimatedScrollView from './components/AnimatedScrollView';
 
 const styles = StyleSheet.create({
   container: {
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 export default function App() {
   return (
     <View style={styles.container}>
-      <AnimatedGestureHandler />
+      <AnimatedScrollView />
     </View>
   );
 }
