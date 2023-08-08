@@ -1,19 +1,15 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
-import InterpolateColors from './components/InterpolateColors';
+// import {StyleSheet} from 'react-native';
+import PinchImageBasics from './components/PinchImageBasics';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // alignItems: 'center',
-    // justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <InterpolateColors />
-    </View>
-  );
+  return <PinchImageBasics />;
 }
